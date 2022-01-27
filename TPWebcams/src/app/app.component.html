@@ -1,2 +1,17 @@
-<app-webcam></app-webcam>
-<app-startseite></app-startseite>
+<nav class="navigation">
+  <ul class="navigation__list navigation__list--inline">
+    <li class="navigation__item">
+      <a routerLink="/startseite" class="navigation__link navigation__link--is-active"
+        >Home</a
+      >
+    </li>
+
+    <li class="navigation__item">
+      <a routerLink="/webcam" class="navigation__link">webcam</a>
+    </li>
+    <li class="navigation__item">
+      <a routerLink="/aboutus" class="navigation__link">About Us</a>
+    </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>

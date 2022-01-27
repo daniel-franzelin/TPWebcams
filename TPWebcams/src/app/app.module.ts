@@ -6,14 +6,12 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { WebcamComponent } from './webcam/webcam.component';
 import { StartseiteComponent } from './startseite/startseite.component';
-import { WorkComponent } from './work/work.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartseiteComponent,
-    WorkComponent,
     AboutUsComponent,
     WebcamComponent,
   ],
