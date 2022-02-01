@@ -1,17 +1,26 @@
-<nav class="navigation">
-  <ul class="navigation__list navigation__list--inline">
-    <li class="navigation__item">
-      <a routerLink="/startseite" class="navigation__link navigation__link--is-active"
+<nav mat-tab-nav-bar backgroundColor="primary" color="accent">
+  <a
+        routerLink="/startseite"
+        routerLinkActive
+        #homeTab="routerLinkActive"
+        class="navigation__link navigation__link--is-active"
         >Home</a
       >
-    </li>
 
-    <li class="navigation__item">
-      <a routerLink="/webcam" class="navigation__link">webcam</a>
-    </li>
-    <li class="navigation__item">
-      <a routerLink="/aboutus" class="navigation__link">About Us</a>
-    </li>
-  </ul>
+      <a
+        routerLink="/webcam"
+        routerLinkActive
+        #webcamTab="routerLinkActive"
+        class="navigation__link"
+        >webcam</a
+      >
+
+      <a mat-tab-matTabLink
+        routerLink="/aboutus"
+        routerLinkActive
+        #aboutUs="routerLinkActive"
+        class="navigation__link"
+        >About Us</a
+      >
 </nav>
 <router-outlet></router-outlet>
