@@ -1,4 +1,4 @@
-import { Webcams } from './webcams';
+import { Webcams } from '../shared/webcams';
 
 describe('Webcams', () => {
   it('should create an instance', () => {

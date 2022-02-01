@@ -1,4 +1,4 @@
-import { CamServiceService } from './../cam-service.service';
+import { CamServiceService } from '../../shared/cam-service.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

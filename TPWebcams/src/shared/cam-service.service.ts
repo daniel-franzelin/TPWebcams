@@ -1,3 +1,5 @@
+import { Webcams } from './webcams';
+import { WebcamFactory } from './webcam-factory';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -10,10 +12,18 @@ export class CamServiceService {
   private testurl =
     'https://api.tourism.testingmachine.eu/v1/WebcamInfo?pagenumber=2&fields=Id,Streamurl,Webcamurl&removenullvalues=false';
 
+  private response!: any;
+  private webcams!: Array<Webcams>;
+
   constructor(private http: HttpClient) {}
 
   getAll() {
-    let a = this.http.get(this.testurl).subscribe((data) => console.log(data));
-    /*console.log(a);*/
+    this.http.get(this.URL).subscribe((data) => {
+      this.response = data;
+      this.webcams = WebcamFactory.fromObject(this.response.Items);
+
+      console.log(this.webcams);
+    });
+    return this.webcams;
   }
 }
