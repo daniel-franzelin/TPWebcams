@@ -3,7 +3,7 @@ import { Webcams } from './webcams';
 export class WebcamFactory {
   static fromObject(rawStation: Array<any>): Webcams[] {
     let ret: Array<Webcams> = [];
-    console.log(rawStation);
+    //console.log(rawStation);
     for (let station of rawStation)
       ret.push(
         new Webcams(
@@ -15,6 +15,7 @@ export class WebcamFactory {
           station.GpsInfo.Longitude
         )
       );
+
     return ret;
   }
 }

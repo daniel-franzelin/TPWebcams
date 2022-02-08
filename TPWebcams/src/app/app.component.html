@@ -1,26 +1,27 @@
 <nav mat-tab-nav-bar class="navigation" >
   <a
-        routerLink="/startseite"
-        routerLinkActive
-        #homeTab="routerLinkActive"
-        class="navigation__link navigation__link--is-active"
-        >Home</a
-      >
+    routerLink="/startseite"
+    routerLinkActive
+    #homeTab="routerLinkActive"
+    class="navigation__link navigation__link--is-active"
+    >Home</a
+  >
 
-      <a
-        routerLink="/webcam"
-        routerLinkActive
-        #webcamTab="routerLinkActive"
-        class="navigation__link"
-        >webcam</a
-      >
+  <a
+    routerLink="/webcam"
+    routerLinkActive
+    #webcamTab="routerLinkActive"
+    class="navigation__link"
+    >webcam</a
+  >
 
-      <a mat-tab-matTabLink
-        routerLink="/aboutus"
-        routerLinkActive
-        #aboutUs="routerLinkActive"
-        class="navigation__link"
-        >About Us</a
-      >
+  <a
+    mat-tab-matTabLink
+    routerLink="/aboutus"
+    routerLinkActive
+    #aboutUs="routerLinkActive"
+    class="navigation__link"
+    >About Us</a
+  >
 </nav>
 <router-outlet></router-outlet>

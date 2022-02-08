@@ -9,6 +9,7 @@ import { StartseiteComponent } from './startseite/startseite.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MapComponent } from './map/map.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     StartseiteComponent,
     AboutUsComponent,
     WebcamComponent,
+    MapComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, MatTabsModule, BrowserAnimationsModule],
   providers: [],
