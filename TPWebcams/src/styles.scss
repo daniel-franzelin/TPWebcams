@@ -1,4 +1,6 @@
 
+
+
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '~@angular/material' as mat;
@@ -38,5 +40,17 @@ $TPWebcams-theme: mat.define-light-theme((
 shtml, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-html, body { height: 100%; }
+html, body { height: 100%;
+background-color: rgba(99, 163, 189, 0.24);
+
+}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+h1 {
+
+  text-align:center;
+  padding-top: 3%;
+
+}

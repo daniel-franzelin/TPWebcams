@@ -5,3 +5,30 @@
 }
 
 
+.grid{
+
+  text-align: center;
+
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("/assets/Vigiljoch.jpg");
+
+  /* Set a specific height */
+   min-height: 90%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.beschreibung{
+
+
+  text-align: center;
+  font-size: x-large;
+
+}
