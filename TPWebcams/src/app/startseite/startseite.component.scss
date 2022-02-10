@@ -27,8 +27,25 @@
 
 .beschreibung{
 
-
   text-align: center;
+  line-height: 125%;
   font-size: x-large;
+
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
+
+
+h1{
+
+
+  font-size: calc(2.8em + 2.6vw);
+	font-weight: 700;
+	letter-spacing: .01em;
+	text-shadow: .022em .022em .022em #111;
+  margin-bottom: 3%;
+
 
 }
