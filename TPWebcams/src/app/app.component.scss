@@ -39,7 +39,7 @@ body {
 /* layout/header.css */
 
 .header {
-  background-color: #fff;
+  // background-color: #fff;
   padding-block: 1em;
 }
 
@@ -102,11 +102,6 @@ h1 {
   text-decoration: none;
 }
 
-.navigation__link--is-active {
-  background-color: #000;
-  border-radius: 999em;
-  color: #fff;
-}
 
 /* modules/paragraph.css */
 
